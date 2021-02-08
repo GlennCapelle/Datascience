@@ -8,7 +8,7 @@ GPIO.setmode(GPIO.BOARD) # Use physical pin numbering
  
 # Ultrasone sensor
 # Set GPIO Pins
-GPIO_TRIGGER = 18
+GPIO_TRIGGER = 23
 GPIO_ECHO = 24
  
 # Set GPIO direction (IN / OUT)
@@ -16,8 +16,9 @@ GPIO.setup(GPIO_TRIGGER, GPIO.OUT)
 GPIO.setup(GPIO_ECHO, GPIO.IN)
 
 # Button
+GPIO_BUTTON = 15
 # Set pin 10 to be an input pin and set initial value to be pulled low (off)
-GPIO.setup(10, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) 
+GPIO.setup(GPIO_BUTTON, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) 
 
 class device:
 
