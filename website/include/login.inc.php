@@ -2,9 +2,9 @@
 
 if (isset($_POST['login-submit'])) {
   $servername = "localhost";
-  $dBUsername = "glenn";
-  $dBPassword = "Glenn1234!";
-  $dBName = "DataScience";
+  $dBUsername = "*****";
+  $dBPassword = "*****";
+  $dBName = "*****";
 
   $conn = mysqli_connect($servername, $dBUsername, $dBPassword, $dBName);
 
@@ -47,7 +47,7 @@ exit();
 
           //$sql = "INSERT INTO cookie (SiD, SuID) VALUES ($row['ID'], $row['USERNAME']);";
           //mysqli_query($conn, $sql)
-          if($uid == "Admin"){
+          if($uid == "*****"){
             header("Location: ../index2.html?login=succes");
             exit();
           }
