@@ -9,7 +9,7 @@
 
 ## Software Lijst
 -   Raspberry Pi OS
--   Ubuntu
+-   Ubuntu 20.04
 -   Python
 -   Html
 -   Php
@@ -47,5 +47,7 @@ Glenn Capelle<br>
 0982591<br>
 0982591@hr.nl
 
-Als er nog vragen zijn hoor ik ze graag!
+Laatste toevoeging:<br>
+Ik heb alle dingen zoals wachtwoorden en database gegevens heb ik eruit gelaten.
 
+Als er nog vragen zijn hoor ik ze graag!
