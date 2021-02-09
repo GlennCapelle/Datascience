@@ -34,16 +34,14 @@ session_start();
         <br>
         <br>
         <?php
-          //include 'login.inc.php';
-          //$sql = "SELECT * FROM website WHERE USERNAME=" .$_SESSION['userUid'];
 
-          $sql = "SELECT Naam, Discription, Afstand FROM datascience";
+          $sql = "SELECT *****, *****, ***** FROM *****";
           $result = $conn->query($sql);
 
           if ($result->num_rows > 0) {
             // output data of each row
             while($row = $result->fetch_assoc()) {
-              echo "Name:   " . $row["Naam"]. "<br>Discription:   " . $row["Discription"]. "<br>Distance:   " . $row["Afstand"]. "<br><br><br>";
+              echo "*****:   " . $row["*****"]. "<br>*****:   " . $row["*****"]. "<br>*****:   " . $row["*****"]. "<br><br><br>";
             }
           } else {
               echo "0 results";
