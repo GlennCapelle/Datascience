@@ -27,7 +27,7 @@ Het idee is om een afstandsmeter te maken die de data naar een website stuurt vi
 Ultrasone Sensor/button --> raspberry door middel van Dupont Jumper Cables --> Ubuntu server --> Website(tcp/udp)
 
 ### Bewijs van werking: 
-Video website: website/video/
+Video website: website/video/<br>
 Video alles: raspberry/video/
 
 ### Code: 
