@@ -26,11 +26,11 @@ class device:
     def connection(self):
         # Connection to server
         self.mydb = mysql.connector.connect(
-        host="192.168.2.24",
-        user="Glenn3",
-        password="Glenn1234!",
-        database="DataScience",
-        auth_plugin='mysql_native_password'
+        host="*****",
+        user="*****",
+        password="*****",
+        database="*****",
+        auth_plugin='*****'
         )
 
     def measure(self):
@@ -71,7 +71,7 @@ class device:
 
         mycursor = self.mydb.cursor()
 
-        sql = "INSERT INTO datascience (Naam, Discription, Afstand) VALUES (%s, %s, %s)"
+        sql = "INSERT INTO ***** (*****, *****, *****) VALUES (%s, %s, %s)"
         val = (name, discription, self.distance)
         mycursor.execute(sql, val)
 
