@@ -1,27 +1,29 @@
-#imports
+# Imports
 import mysql.connector
 import RPi.GPIO as GPIO # Import Raspberry Pi GPIO library
 import time
+ 
+# GPIO setup
+GPIO.setmode(GPIO.BOARD) 
 
-GPIO.setwarnings(False) 
-GPIO.setmode(GPIO.BOARD)
 # Ultrasone sensor
+
 # Set GPIO Pins
 GPIO_TRIGGER = 11
 GPIO_ECHO = 13
-
-GPIO.setup(10, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) 
  
-#set GPIO direction (IN / OUT)
+# Set GPIO direction (IN / OUT)
 GPIO.setup(GPIO_TRIGGER, GPIO.OUT)
 GPIO.setup(GPIO_ECHO, GPIO.IN)
+
+# Set GPIO direction (IN / OUT)
+GPIO.setup(10, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) 
 
 class device:
 
     def __init__(self):
         # Fields
         self.distance = 0
-
 
     def connection(self):
         # Connection to server
@@ -68,11 +70,13 @@ class device:
         print("Name: ", name)
         print("discription: ", discription)
 
-
         mycursor = self.mydb.cursor()
-
+        
+        # Setup for sending to database
         sql = "INSERT INTO ***** (*****, *****, *****) VALUES (%s, %s, %s)"
         val = (name, discription, self.distance)
+        
+        # Send to database
         mycursor.execute(sql, val)
 
         self.mydb.commit()
@@ -84,7 +88,7 @@ def main():
     while True:
         s = device()
         
-        if GPIO.input(10) == GPIO.HIGH:
+        if GPIO.input(10) == GPIO.HIGH: # If button is pressed call for function
             s.send()
 
 # Call the main function
