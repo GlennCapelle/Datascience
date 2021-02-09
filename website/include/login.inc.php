@@ -21,7 +21,7 @@ if (isset($_POST['login-submit'])) {
 exit();
   }
   else {
-    $sql = "SELECT * FROM gegevens WHERE USERNAME=?;";
+    $sql = "SELECT * FROM ***** WHERE USERNAME=?;";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
       header("Location: ../login.php?error=sqlerror");
@@ -44,9 +44,7 @@ exit();
           session_start();
           $_SESSION['userId'] = $row['ID'];
           $_SESSION['userUid']= $row['USERNAME'];
-
-          //$sql = "INSERT INTO cookie (SiD, SuID) VALUES ($row['ID'], $row['USERNAME']);";
-          //mysqli_query($conn, $sql)
+		
           if($uid == "*****"){
             header("Location: ../index2.html?login=succes");
             exit();
