@@ -43,8 +43,8 @@ Codes website: website/
 -   Een manier om altijd internet te hebben.
 
 ### Contact
-Glenn Capelle
-0982591
+Glenn Capelle<br>
+0982591<br>
 0982591@hr.nl
 
 Als er nog vragen zijn hoor ik ze graag!
