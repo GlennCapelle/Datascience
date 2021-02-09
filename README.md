@@ -5,6 +5,7 @@
 -   Ultrasone Sensor
 -   Button
 -   Wires
+-   Server
 
 ## Software Lijst
 -   Raspberry Pi OS
