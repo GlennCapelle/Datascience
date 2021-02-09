@@ -32,7 +32,8 @@ Video website: website/video/<br>
 Video alles: raspberry/video/
 
 ### Code: 
-Code: raspberry/
+Code raspberry: raspberry/<br>
+Codes website: website/
 
 ### Uitbreidmogelijkheden: 
 
